@@ -1,102 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fiesta Hawaiana - Código de Vestimenta</title>
-  <!-- Vinculamos Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJvL6/4XpS5y7t9t9E+I8BSAwXqjJrR9AfqfKdbKb70tvs19gdRa9O//+9B6z" crossorigin="anonymous">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #C8C2AC;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    h1 {
-      color: #2d8f9f;
-      margin-top: 50px;
-    }
-    h2 {
-      color: #f45d48;
-      margin-top: 30px;
-    }
-    .gallery {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-    .image-container {
-      margin: 20px;
-      max-width: 300px;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .description {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página en Construcción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #A1C79D;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .timer {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #f2f2f2;
+            background-color: #5A7058;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .message {
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .funny-message {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #ffeb3b;
+            margin-top: 20px;
+        }
+
+        .btn-excitement {
+            background-color: #5A7058;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 5px;
+            margin-top: 40px;
+        }
+
+        .btn-excitement:hover {
+            background-color: #88A986;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Fiesta Hawaiana - Código de Vestimenta</h1>
-    <h2>¡Diviértete y sigue el estilo hawaiano!</h2>
+    <div class="container">
+        <h1 class="message">¡Oops! Estamos construyendo algo épico...</h1>
+        <p class="funny-message">Lo sentimos, la fiesta aún no está lista. Pero ya casi... 🎉</p>
 
-    <div class="gallery">
-      <!-- Imagen 1 -->
-      <div class="image-container">
-        <img src="https://m.media-amazon.com/images/I/81-Iv3AK0BL._AC_SY741_.jpg" alt="Código de Vestimenta Hawaiano 1">
-        <p class="description">Lleva flores y colores vibrantes, perfectos para la ocasión.</p>
-      </div>
-      <!-- Imagen 2 -->
-      <div class="image-container">
-        <img src="https://i.pinimg.com/736x/f6/59/cf/f659cf464b0ec2a3fa8df1983b83aded.jpg" alt="Código de Vestimenta Hawaiano 2">
-        <p class="description">Trajes ligeros y cómodos para disfrutar de la fiesta sin preocupaciones.</p>
-      </div>
-      <!-- Imagen 3 -->
-      <div class="image-container">
-        <img src="https://i.pinimg.com/736x/94/95/08/9495084d5d4b1957fcb455e0b42b2735.jpg" alt="Código de Vestimenta Hawaiano 3">
-        <p class="description">Utiliza tus colores preferidos y disfruta de la fiesta.</p>
-      </div>
+        <!-- Timer Countdown -->
+        <div id="countdown" class="timer"></div>
+
+        <button class="btn-excitement" onclick="alert('¡Gracias por tu paciencia! 😎')">¡Haz clic aquí para más diversión!</button>
     </div>
 
-    <div class="gallery">
-      <!-- Imagen 4 -->
-      <div class="image-container">
-        <img src="https://i.pinimg.com/736x/38/8f/11/388f117b76e86606f1ecc3bea572a3f7.jpg" alt="Código de Vestimenta Hawaiano 4">
-        <p class="description">Utiliza el estilo hawaiano que más te guste.</p>
-      </div>
-    </div>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("April 26, 2025 14:00:00").getTime();
 
-    <div class="gallery">
-      <!-- Imagen 5 -->
-      <div class="image-container">
-        <img src="https://sc04.alicdn.com/kf/H18aef281ea58430aa0d44d5a24daa784V.jpg" alt="Código de Vestimenta Hawaiano 5">
-        <p class="description">Estos son algunos tipos de camisas para cumplir el código de vestimenta.</p>
-      </div>
-    </div>
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
 
-    <div class="gallery">
-      <!-- Imagen 6 -->
-      <div class="image-container">
-        <img src="https://cotillonactivarte.cl/17261/collar-hawaiano-flor.jpg" alt="Código de Vestimenta Hawaiano 6">
-        <p class="description">Se te obsequiará un collar de flores el día del evento.</p>
-      </div>
-    </div>
-  </div>
+            // Get the current date and time
+            var now = new Date().getTime();
 
-  <!-- Vinculamos los scripts de Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybAgq5cQJYpR9P4lYgqA0p8VcHfh8FvXgfYtQbx50YpS9/hy8V" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyqzTKn5wyQxX05f5M19v77pnsYXfNQk5XmmFv4V4yBzM1k6a5RkA7m" crossorigin="anonymous"></script>
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "¡El gran día llegó! 🎉";
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
