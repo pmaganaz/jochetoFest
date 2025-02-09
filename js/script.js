@@ -4,7 +4,7 @@ class HeaderComponent extends HTMLElement {
 <nav class="navbar navbar-expand-lg navbar-dark">
       <!-- NAV CONTAINER START -->
       <div class="container-fluid">
-        <a href="" class="navbar-brand fw-semibold fs-4">Jocheto Fest</a>
+        <a href="./home.html" class="navbar-brand fw-semibold fs-4">Home</a>
 
         <!-- NAV BUTTON  -->
         <button
@@ -36,7 +36,7 @@ class HeaderComponent extends HTMLElement {
           >
             <ul class="navbar-nav fs-5 justify-content-evenly">
               <li class="nav-item p-3 py-md-1">
-                <a href="" class="nav-link">Código de Vestimenta</a>
+                <a href="./codigo_vestimenta.html" class="nav-link">Código de Vestimenta</a>
               </li>
               <li class="nav-item p-3 py-md-1">
                 <a href="" class="nav-link">Mesa de Regalos</a>
@@ -46,6 +46,9 @@ class HeaderComponent extends HTMLElement {
               </li>
               <li class="nav-item p-3 py-md-1">
                 <a href="" class="nav-link">Ubica tu lugar</a>
+              </li>
+                <li class="nav-item p-3 py-md-1">
+                <a href="" class="nav-link">Galería imagenes</a>
               </li>
             </ul>
             <!-- enlaces redes sociales -->
