@@ -1,6 +1,6 @@
   nav,
 .offcanvas {
-background-color: #A1C79D;
+background-color: #c79da1;
 }
 .navbar-toggler {
 border: none;
@@ -14,4 +14,11 @@ box-shadow: none;
 .navbar-nav > li:hover {
   background-color: #9da1c7;
 }
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a3c9a1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
