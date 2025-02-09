@@ -1,0 +1,29 @@
+h1 {
+      color: #dbdddb;
+      margin-top: 50px;
+    }
+    h2 {
+      color: #dbdddb;
+      margin-top: 30px;
+    }
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .image-container {
+      margin: 20px;
+      max-width: 300px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .description {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #dbdddb;
+    }
