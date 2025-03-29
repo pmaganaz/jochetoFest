@@ -1,11 +1,10 @@
 class HeaderComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="nav navbar navbar-expand-lg navbar-dark">
       <!-- NAV CONTAINER START -->
       <div class="container-fluid">
-        <a href="./home.html" class="navbar-brand fw-semibold fs-4">Home</a>
-
+        <a href="./index.html" class="navbar-brand fw-semibold fs-4">Home</a>
         <!-- NAV BUTTON  -->
         <button
           class="navbar-toggler"
@@ -22,7 +21,7 @@ class HeaderComponent extends HTMLElement {
           tabindex="-1"
         >
           <div class="offcanvas-header" data-bs-theme="dark">
-            <h5 class="offcanvas-title">Jocheto Fest</h5>
+          <a href="./index.html" class="navbar-brand fw-semibold fs-4"><h5 class="offcanvas-title">Jocheto Fest</h5></a>
             <button
               class="btn-close"
               type="button"
@@ -39,23 +38,17 @@ class HeaderComponent extends HTMLElement {
                 <a href="./codigo_vestimenta.html" class="nav-link">Código de Vestimenta</a>
               </li>
               <li class="nav-item p-3 py-md-1">
-                <a href="" class="nav-link">Mesa de Regalos</a>
+                <a href="./direccion.html" class="nav-link">Dirección del Evento</a>
               </li>
               <li class="nav-item p-3 py-md-1">
-                <a href="" class="nav-link">Dirección del Evento</a>
-              </li>
-              <li class="nav-item p-3 py-md-1">
-                <a href="" class="nav-link">Ubica tu lugar</a>
-              </li>
-                <li class="nav-item p-3 py-md-1">
-                <a href="" class="nav-link">Galería imagenes</a>
+                <a href="./mesa.html" class="nav-link">Ubica tu lugar</a>
               </li>
             </ul>
             <!-- enlaces redes sociales -->
 
             <div class="d-lg-none align-self-center py-3">
-              <a href=""><i class="bi bi-facebook text-white-50 px-2 fs-2"></i></a>
-              <a href=""><i class="bi bi-whatsapp text-white-50 px-2 fs-2"></i></a>
+              <a href="https://www.facebook.com/josealberto.magana.12?locale=es_LA"><i class="bi bi-facebook text-white-50 px-2 fs-2"></i></a>
+              <a href="https://wa.me/+5219933059796"><i class="bi bi-whatsapp text-white-50 px-2 fs-2"></i></a>
             </div>
           </div>
         </section>

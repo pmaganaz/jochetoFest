@@ -1,4 +1,4 @@
-  nav,
+  .nav,
 .offcanvas {
 background-color: #c79da1;
 }
@@ -21,4 +21,8 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+h2 {
+  color: #dbdddb;
+  margin-top: 30px;
 }

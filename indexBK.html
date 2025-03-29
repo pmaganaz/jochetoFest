@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página en Construcción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #A1C79D;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .timer {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #f2f2f2;
+            background-color: #5A7058;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .message {
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .funny-message {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #ffeb3b;
+            margin-top: 20px;
+        }
+
+        .btn-excitement {
+            background-color: #5A7058;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 5px;
+            margin-top: 40px;
+        }
+
+        .btn-excitement:hover {
+            background-color: #88A986;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="message">¡Oops! Estamos construyendo algo épico...</h1>
+        <p class="funny-message">Lo sentimos, la fiesta aún no está lista. Pero ya casi... 🎉</p>
+        <p class="funny-message">¡Nos estamos tomando un descanso de la construcción para practicar el hula hula! 🏖️</p>
+        <!-- Timer Countdown -->
+        <div id="countdown" class="timer"></div>
+
+        
+    </div>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("April 26, 2025 14:00:00").getTime();
+
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+
+            // Get the current date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "¡El gran día llegó! 🎉";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>

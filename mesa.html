@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jocheto Fest</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/styleCodigoVestimenta.css">
+  </head>
+  <style>
+    img {
+  width: 100%;
+  height: 550px;
+  object-fit: contain;
+  object-position: center;
+}
+</style>
+  <body>
+    <header-component></header-component>
+    <div class="container mt-4">
+        <h1 class="text-center">Encuentra tu mesa</h1>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <!-- Input de filtro -->
+                <input type="text" id="filtro-nombre" class="form-control" placeholder="Filtrar por nombre...">
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="table-light">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>No de Mesa</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-cuerpo">
+                    <!-- Ejemplo de datos -->
+                    <tr>
+                        <td>Alexander</td>
+                        <td>Mesa 1</td>
+                    </tr>
+                    <tr>
+                        <td>Jade</td>
+                        <td>Mesa 1</td>
+                    </tr>
+                    <tr>
+                        <td>Diego</td>
+                        <td>Mesa 1</td>
+                    </tr>
+                    <tr>
+                        <td>Missa</td>
+                        <td>Mesa 1</td>
+                    </tr>
+                    <tr>
+                        <td>Brown</td>
+                        <td>Mesa 1</td>
+                    </tr>
+                    <tr>
+                        <td>Rafa</td>
+                        <td>Mesa 1</td>
+                    </tr>
+                    <tr>
+                        <td>Josey</td>
+                        <td>Mesa 1</td>
+                    </tr>
+                    <tr>
+                        <td>Papa Misa</td>
+                        <td>Mesa 1</td>
+                    </tr>
+                    <tr>
+                        <td>Josue</td>
+                        <td>Mesa 2</td>
+                    </tr>
+                    <tr>
+                        <td>Zavala</td>
+                        <td>Mesa 2</td>
+                    </tr>
+                    <tr>
+                        <td>Shaday</td>
+                        <td>Mesa 2</td>
+                    </tr>
+                    <tr>
+                        <td>Gio (Halcones Negros)</td>
+                        <td>Mesa 2</td>
+                    </tr>
+                    <tr>
+                        <td>Zigrit</td>
+                        <td>Mesa 2</td>
+                    </tr>
+                    <tr>
+                        <td>Sua</td>
+                        <td>Mesa 2</td>
+                    </tr>
+                    <tr>
+                        <td>Karla</td>
+                        <td>Mesa 2</td>
+                    </tr>
+                    <tr>
+                        <td>Fabricio</td>
+                        <td>Mesa 2</td>
+                    </tr>
+                    <tr>
+                        <td>Zanahoria</td>
+                        <td>Mesa 2</td>
+                    </tr>
+                    <tr>
+                        <td>Darwin</td>
+                        <td>Mesa 3</td>
+                    </tr>
+                    <tr>
+                        <td>Ángeles</td>
+                        <td>Mesa 3</td>
+                    </tr>
+                    <tr>
+                        <td>Pamela</td>
+                        <td>Mesa 3</td>
+                    </tr>
+                    <tr>
+                        <td>Saraí Hoop</td>
+                        <td>Mesa 3</td>
+                    </tr>
+                    <tr>
+                        <td>Gael</td>
+                        <td>Mesa 3</td>
+                    </tr>
+                    <tr>
+                        <td>Iván</td>
+                        <td>Mesa 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dulce</td>
+                        <td>Mesa 3</td>
+                    </tr>
+                    <tr>
+                        <td>Yuca</td>
+                        <td>Mesa 3</td>
+                    </tr>
+                    <tr>
+                        <td>Randy</td>
+                        <td>Mesa 3</td>
+                    </tr>
+                    <tr>
+                        <td>Novia de Randy</td>
+                        <td>Mesa 3</td>
+                    </tr>
+                    <tr>
+                        <td>Mamá</td>
+                        <td>Mesa 4</td>
+                    </tr>
+                    <tr>
+                        <td>Papá</td>
+                        <td>Mesa 4</td>
+                    </tr>
+                    <tr>
+                        <td>Susy</td>
+                        <td>Mesa 4</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>Mesa 4</td>
+                    </tr>
+                    <tr>
+                        <td>Hermano de Carlos</td>
+                        <td>Mesa 4</td>
+                    </tr>
+                    <tr>
+                        <td>Abuela</td>
+                        <td>Mesa 4</td>
+                    </tr>
+                    <tr>
+                        <td>Jocheto</td>
+                        <td>Mesa 4</td>
+                    </tr>
+                    <tr>
+                        <td>Sicaru</td>
+                        <td>Mesa 4</td>
+                    </tr>
+                    <tr>
+                        <td>Sara</td>
+                        <td>Mesa 4</td>
+                    </tr>
+                    <tr>
+                        <td>Fucho</td>
+                        <td>Mesa 5</td>
+                    </tr>
+                    <tr>
+                        <td>Novia de Fucho</td>
+                        <td>Mesa 5</td>
+                    </tr>
+                    <tr>
+                        <td>Adiel (gordo)</td>
+                        <td>Mesa 5</td>
+                    </tr>
+                    <tr>
+                        <td>Jorge Oreja</td>
+                        <td>Mesa 5</td>
+                    </tr>
+                    <tr>
+                        <td>Lesho</td>
+                        <td>Mesa 5</td>
+                    </tr>
+                    <tr>
+                        <td>Novia de Lesho</td>
+                        <td>Mesa 5</td>
+                    </tr>
+                    <tr>
+                        <td>Carlo (Grapa)</td>
+                        <td>Mesa 5</td>
+                    </tr>
+                    <tr>
+                        <td>Novia de Carlo</td>
+                        <td>Mesa 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Paginación -->
+        <nav>
+            <ul class="pagination" id="paginacion"></ul>
+        </nav>
+    </div>
+
+  </body>
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"
+></script>
+<script>
+    const filasPorPagina = 5;
+    const cuerpoTabla = document.getElementById('tabla-cuerpo');
+    const paginacion = document.getElementById('paginacion');
+    const filtroInput = document.getElementById('filtro-nombre');
+    let filas = Array.from(cuerpoTabla.querySelectorAll('tr'));
+    let filasFiltradas = filas;
+
+    function mostrarPagina(pagina) {
+        const inicio = (pagina - 1) * filasPorPagina;
+        const fin = inicio + filasPorPagina;
+
+        filasFiltradas.forEach((fila, index) => {
+            fila.style.display = (index >= inicio && index < fin) ? '' : 'none';
+        });
+    }
+
+    function generarPaginacion() {
+        const totalPaginas = Math.ceil(filasFiltradas.length / filasPorPagina);
+        paginacion.innerHTML = '';
+
+        for (let i = 1; i <= totalPaginas; i++) {
+            const li = document.createElement('li');
+            li.className = 'page-item';
+            li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+
+            li.addEventListener('click', (e) => {
+                e.preventDefault();
+                mostrarPagina(i);
+                document.querySelectorAll('.page-item').forEach(item => item.classList.remove('active'));
+                li.classList.add('active');
+            });
+
+            paginacion.appendChild(li);
+        }
+
+        if (paginacion.firstChild) {
+            paginacion.firstChild.classList.add('active'); // Marcar la primera página como activa
+        }
+    }
+
+    function aplicarFiltro(){
+        const filtro = this.value.toLowerCase();
+        const filas = document.querySelectorAll('#tabla-cuerpo tr');
+
+        filas.forEach(fila => {
+        const nombre = fila.cells[0].textContent.toLowerCase();
+        fila.style.display = nombre.includes(filtro) ? '' : 'none';
+    });
+    if(filtro == ""){
+        generarPaginacion();
+        mostrarPagina(1);
+    }
+    }
+    
+    filtroInput.addEventListener('input', aplicarFiltro);
+
+    // Inicializar
+    generarPaginacion();
+    mostrarPagina(1);
+</script>
+</html>
